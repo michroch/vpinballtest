@@ -418,8 +418,8 @@ void Ball::Render(const unsigned int renderMask)
          const float sx = fabsf(c * rx - s * ry);
          const float sy = fabsf(s * rx + c * ry);
          // balance stretching/enlarging to avoid having too much size difference between ball at the top / ball at the bottom
-         antiStretch.x = 0.5f * (1.0f + sy / sx);
-         antiStretch.y = 0.5f * (1.0f + sx / sy);
+         antiStretch.x = 0.53f * (1.0f + sy / sx);
+         antiStretch.y = 0.45f * (1.0f + sx / sy);
       }
    }
 
