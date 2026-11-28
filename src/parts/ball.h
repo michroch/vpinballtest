@@ -20,7 +20,7 @@ class AntiStretchHelper final
 {
 public:
    // The number of points matters: 12 points are not enough, 35 and more seems to give good results
-   static constexpr int npts = 35;
+   static constexpr int npts = 40;
    float m_stretchFitPoints[3 * npts];
 
    AntiStretchHelper()
